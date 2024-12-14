@@ -13,6 +13,53 @@ Screencast from our Demo
 
 <img src="https://github.com/Jowsing/XScrollView/blob/main/images/vertical.gif" width="40%"/>
 
+### Usage
+
+Init XScrollView
+
+```swift
+        let scrollView = XScrollView(frame: .zero)
+        scrollView.backgroundColor = .red
+        scrollView.contentInset = .init(top: 10, left: 10, bottom: 10, right: 10)
+        view.addSubview(scrollView)
+        scrollView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.equalTo(200)
+            if #available(iOS 11.0, *) {
+                make.bottom.lessThanOrEqualTo(view.safeAreaLayoutGuide.snp.bottom).offset(-30)
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+```
+
+Automatic layout of directions
+
+```swift
+        // Set the auto scroll direction
+        scrollView.autoScrollDirection = .vertical // or horizontal
+```
+
+Add Subviews
+
+```swift
+        // Add the views
+        scrollView.addArrangedSubview(titleLabel)
+        
+        titleLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(15)
+        }
+        
+        scrollView.addArrangedSubview(label)
+        
+        label.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(15)
+            make.left.right.equalTo(0)
+        }
+```
+
+
 ## Requirements
 
 ## Installation

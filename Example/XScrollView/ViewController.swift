@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let scrollView = XScrollView(frame: .zero)
+        scrollView.autoScrollDirection = .vertical
         scrollView.backgroundColor = .red
         scrollView.contentInset = .init(top: 10, left: 10, bottom: 10, right: 10)
         view.addSubview(scrollView)
