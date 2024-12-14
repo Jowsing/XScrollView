@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  XScrollView
 //
-//  Created by zhouxin on 12/14/2024.
-//  Copyright (c) 2024 zhouxin. All rights reserved.
+//  Created by jowsing on 12/14/2024.
+//  Copyright (c) 2024 jowsing. All rights reserved.
 //
 
 import UIKit

@@ -1,6 +1,6 @@
 # XScrollView
 
-[![CI Status](https://img.shields.io/travis/zhouxin/XScrollView.svg?style=flat)](https://travis-ci.org/zhouxin/XScrollView)
+[![CI Status](https://img.shields.io/travis/jowsing/XScrollView.svg?style=flat)](https://travis-ci.org/jowsing/XScrollView)
 [![Version](https://img.shields.io/cocoapods/v/XScrollView.svg?style=flat)](https://cocoapods.org/pods/XScrollView)
 [![License](https://img.shields.io/cocoapods/l/XScrollView.svg?style=flat)](https://cocoapods.org/pods/XScrollView)
 [![Platform](https://img.shields.io/cocoapods/p/XScrollView.svg?style=flat)](https://cocoapods.org/pods/XScrollView)
@@ -22,7 +22,7 @@ pod 'XScrollView'
 
 ## Author
 
-zhouxin, xinzhou@wisedu.com
+jowsing, jowsing169@gmail.com
 
 ## License
 

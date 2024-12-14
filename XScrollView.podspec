@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XScrollView'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of XScrollView.'
 
 # This description is used to generate tags and improve search results.
@@ -21,22 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zhouxin/XScrollView'
+  s.homepage         = 'https://github.com/jowsing/XScrollView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zhouxin' => 'xinzhou@wisedu.com' }
-  s.source           = { :git => 'https://github.com/zhouxin/XScrollView.git', :tag => s.version.to_s }
+  s.author           = { 'jowsing' => 'jowsing169@gmail.com' }
+  s.source           = { :git => 'https://github.com/jowsing/XScrollView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'XScrollView/Classes/**/*'
+  s.source_files = 'Sources/**/*'
   
-  # s.resource_bundles = {
-  #   'XScrollView' => ['XScrollView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SnapKit'
+  
 end

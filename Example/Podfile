@@ -4,10 +4,6 @@ platform :ios, '10.0'
 
 target 'XScrollView_Example' do
   pod 'XScrollView', :path => '../'
+  pod 'SnapKit'
 
-  target 'XScrollView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
