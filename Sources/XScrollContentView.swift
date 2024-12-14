@@ -23,6 +23,10 @@ final class XScrollContentView: UIView {
     
     var fitsMaxSizeUpdateHandler: (() -> Void)?
     
+    // MARK: - Property (lazy)
+    
+    lazy var constraintsItem = ConstraintsItem(view: self)
+    
     // MARK: - Life Cycle
     
     override func layoutSubviews() {

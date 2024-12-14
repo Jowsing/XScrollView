@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         scrollView.addArrangedSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(15)
+            make.top.equalTo(0)
         }
         
         scrollView.addArrangedSubview(label)

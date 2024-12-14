@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SnapKit
 
 public class XScrollView: UIScrollView {
     
@@ -63,7 +62,6 @@ public class XScrollView: UIScrollView {
     
     private let contentView = XScrollContentView()
     
-    
     // MARK: - Life Cycle
     
     public override init(frame: CGRect) {
@@ -93,14 +91,13 @@ public class XScrollView: UIScrollView {
             self.contentInsetAdjustmentBehavior = .never
         }
         self.addSubview(contentView)
-        self.contentView.snp.makeConstraints { make in
-            make.top.left.equalTo(0)
-            make.width.equalTo(0)
-            make.height.equalTo(0)
-        }
+        
         self.contentView.fitsMaxSizeUpdateHandler = { [weak self] in
             self?.updateFitsSize()
         }
+        
+        self.contentView.constraintsItem.top = 0
+        self.contentView.constraintsItem.leading = 0
     }
         
     private func updateFitsSize() {
@@ -112,8 +109,8 @@ public class XScrollView: UIScrollView {
     private func updateSizeConstraints() {
         self.contentSize = CGSize(width: fitsSize.width - (contentInset.left + contentInset.right),
                                   height: fitsSize.height - (contentInset.top + contentInset.bottom))
-        self.contentView.snp.updateConstraints { make in
-            make.size.equalTo(contentSize)
-        }
+        
+        self.contentView.constraintsItem.width = contentSize.width
+        self.contentView.constraintsItem.height = contentSize.height
     }
 }
