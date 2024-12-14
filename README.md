@@ -9,6 +9,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Screencast from our Demo
+
+<img src="https://github.com/Jowsing/XScrollView/blob/main/images/vertical.gif" width="40%"/>
+
 ## Requirements
 
 ## Installation
